@@ -1,159 +1,213 @@
+li {
+  list-style-type: none;
+  margin: 2vw 0;
 
-li{
-    list-style-type: none;
-    margin: 2vw 0;
-    
-    font-size: 3vh;
+  font-size: 3vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: monospace;
+
+  padding: 2vw;
+}
+
+nav {
+  width: 100vw;
+  background-color: black;
+}
+
+ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+}
+
+body {
+  margin: 0;
+}
+
+.menubutton {
+  display: none;
+}
+
+a:hover {
+  background-color: grey;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 500px) {
+  ul {
+    flex-direction: column;
   }
-  
-  a{
-    text-decoration: none;
-    color: black;
-    font-family:monospace;
-  
-    padding: 2vw;
-  }
-  
-  nav{
-    width: 100vw;
-    background-color: black;
-  }
-  
-  ul{
+
+  a {
     display: block;
-    margin: 0;
-    padding: 0;
-    
-    display: flex;  
   }
-  
-  body{
+
+  li {
     margin: 0;
   }
-  
-  .menubutton{
-    display: none;
-  }
-  
-  a:hover{
+
+  .menubutton {
+    display: block;
+
+    padding: 2vw;
+    font-size: 3vh;
     background-color: grey;
-  text-transform: capitalize;}
-  
-  @media only screen and (max-width: 500px) {
-    ul{
-      flex-direction: column;
-    }
-    
-    a{
-      display: block;
-    }
-    
-    li{
-      margin: 0;
-    }
-    
-    .menubutton{
-      display: block;
-      
-      padding: 2vw;
-      font-size: 3vh;
-      background-color: grey;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      
-      align-self: flex-start;
-    }
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    align-self: flex-start;
   }
+}
 
-  .welcome{ margin: auto;
-text-align: center;
-background-color: black; 
-color: white; 
-height: auto; 
-width: auto;
-font-size: 50px;
-padding: 100px;
-margin-bottom:40px;
-margin-top: -40px;
-background-image: url(./tree-silhouette-1642770.jpg);
-font-family: monospace;}
+.welcome {
+  margin: auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: auto;
+  width: auto;
+  font-size: 50px;
+  padding: 100px;
+  margin-bottom: 40px;
+  margin-top: -40px;
+  background-image: url(./tree-silhouette-1642770.jpg);
+  font-family: monospace;
+}
 
-.introduction{text-align: center;
-font-size: 20px;
-line-height: 30px;
-font-family: monospace;
-height: fit-content;
-width: 100vw;
-background-image: url(./tree-silhouette-1642770.jpg);
-color: white;
-margin-top: -40px;}
+.introduction {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: monospace;
+  height: fit-content;
+  width: 100vw;
+  background-image: url(./tree-silhouette-1642770.jpg);
+  color: white;
+  margin-top: -40px;
+}
 
-hr{width: 30%;
-height: 100px;}
+hr {
+  width: 30%;
+  height: 100px;
+}
 
-.header{text-align: center;}
+.header {
+  text-align: center;
+}
 
 .button {
-    width: 25%;
-    height: 30px;
-    color: white;
-    background-color: #428BCA;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: monospace;
-    text-align: center;
-   margin-bottom: 10px;
+  width: 25%;
+  height: 30px;
+  color: white;
+  background-color: #428bca;
+  border-radius: 15px;
+  font-size: 15px;
+  font-family: monospace;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.contentbox{ width: 45%;
-height: fit-content;
-text-align: center;
-margin: 20px auto;
-border: 10px solid white;
-border-left: 5px solid #428BCA;
-border-bottom: 5px solid #428BCA;
-box-shadow: 18px 18px 35px #d9d9d9;
-background: #ffffff;
-border-radius: 20px;
+.contentbox {
+  width: 45%;
+  height: fit-content;
+  text-align: center;
+  margin: 20px auto;
+  border: 10px solid white;
+  border-left: 5px solid #428bca;
+  border-bottom: 5px solid #428bca;
+  box-shadow: 18px 18px 35px #d9d9d9;
+  background: #ffffff;
+  border-radius: 20px;
 }
 
-.whatwedo-1, .whatwedo-2, .ourtools-1, .ourtools-2{display: flex;
-justify-content: space-between;}
-
-.fleximage{ height: 35vh;
-width: 35vw;
-border-radius: 5px;}
-
-.header{font-weight: 1000;
-font-size: 50px;
-border-bottom: 10px solid black;
-width: fit-content;
-margin: auto;
-margin-bottom: 30px;
-font-family: monospace;}
-
-
-@media only screen and (max-width: 500px) { .whatwedo-1, .whatwedo-2, .ourtools-1, .ourtools-2{flex-direction: column;}
-.contentbox{width:100%}}
-.name{border-bottom: 10px;
+.whatwedo-1,
+.whatwedo-2,
+.ourtools-1,
+.ourtools-2 {
+  display: flex;
+  justify-content: space-between;
 }
 
-.description{font-size: 25px;
-font-family: monospace;
-margin: 10px auto;}
+.fleximage {
+  height: 35vh;
+  width: 35vw;
+  border-radius: 5px;
+}
 
-.noflex{height: 70vh;
-width: 50vw;
-margin: 20px auto;
-border-radius: 10px;}
+.header {
+  font-weight: 1000;
+  font-size: 50px;
+  border-bottom: 10px solid black;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 30px;
+  font-family: monospace;
+}
 
-.sponsors{margin: 15px auto;
-    border-bottom: 5px solid #428BCA;
-    border-left: 5px solid #428BCA;
-    border-right: 5px solid #428BCA;
-text-align: center;
-width: fit-content;
-box-shadow: 18px 18px 35px #d9d9d9;
-background: #ffffff;
-border-radius: 20px;}
+@media only screen and (max-width: 500px) {
+  .whatwedo-1,
+  .whatwedo-2,
+  .ourtools-1,
+  .ourtools-2 {
+    flex-direction: column;
+  }
+  .contentbox {
+    width: 100%;
+  }
+}
+.name {
+  border-bottom: 10px;
+}
+
+.description {
+  font-size: 25px;
+  font-family: monospace;
+  margin: 10px auto;
+}
+
+.noflex {
+  height: 70vh;
+  width: 50vw;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.sponsors,
+.contactform {
+  margin: 15px auto;
+  border-bottom: 5px solid #428bca;
+  border-left: 5px solid #428bca;
+  border-right: 5px solid #428bca;
+  text-align: center;
+  width: fit-content;
+  box-shadow: 18px 18px 35px #d9d9d9;
+  background: #ffffff;
+  border-radius: 20px;
+  font-family: monospace;
+}
+input {
+  width: 25vw;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: -30px;
+}
+.formheader {
+  font-weight: 100;
+  border-bottom: 3px solid #428bca;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 30px;
+  font-family: monospace;
+}
+footer {
+  text-align: center;
+  background-color: #428bca;
+  color: #ffffff;
+}
